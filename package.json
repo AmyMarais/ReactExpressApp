@@ -1,0 +1,20 @@
+{
+  "name": "reactexpress",
+  "version": "1.0.0",
+  "description": "tutorial",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client" : "npm start --prefix client",
+    "dev" : "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amy Marais",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "6.3.0",
+    "express": "4.17.1",
+    "nodemon": "2.0.14"
+  }
+}
